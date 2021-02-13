@@ -64,7 +64,7 @@ jobs:
         fi
         if [[ "$OS_NAME" == "Windows" ]]; then
           source /c/Miniconda3/Scripts/activate;
-          source build_miniforge_win.sh;
+          source build_robostack_installer_win.sh;
           EXT=exe
         fi
         # Copy for latest release

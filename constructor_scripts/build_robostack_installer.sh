@@ -18,10 +18,10 @@ echo "============= Create build directory ============="
 mkdir -p build/
 chmod 777 build/
 
-# echo "============= Enable QEMU ============="
-# # Enable qemu in persistent mode
-# docker run --rm --privileged multiarch/qemu-user-static \
-#   --reset --credential yes --persistent yes
+echo "============= Enable QEMU ============="
+# Enable qemu in persistent mode
+docker run --rm --privileged multiarch/qemu-user-static \
+  --reset --credential yes --persistent yes
 
 echo "============= Build the installer ============="
 docker run --rm -v "$(pwd):/construct" \
