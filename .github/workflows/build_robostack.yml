@@ -1,4 +1,4 @@
-name: Build miniforge
+name: Build RoboStack installer
 on: [workflow_dispatch]
 
 jobs:
