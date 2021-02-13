@@ -9,6 +9,7 @@ channels:
   - robostack
   - conda-forge
 
+ignore_duplicate_files: True
 write_condarc: True
 # keep pkgs for space-saving implications for hardlinks when create new environments
 # and keep the same with Miniconda
